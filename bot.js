@@ -1,4 +1,5 @@
 const client = new Client({
+    allowedMentions: { parse: [] }, // Don't allow pings of any kind.
     intents: [
         // Intents specify what the bot listens to from
         // You can find more information about intents here:
