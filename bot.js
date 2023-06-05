@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, Collection } = require("discord.js")
+const { Client, GatewayIntentBits, Collection, ActivityType } = require("discord.js")
 const client = new Client({
     allowedMentions: { parse: [] },
     intents: [
@@ -16,6 +16,7 @@ const client = new Client({
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`)
+	client.user.setActivity('people imagine', { type: ActivityType.Watching });
 })
 
 client.on("messageCreate", (message) => {
