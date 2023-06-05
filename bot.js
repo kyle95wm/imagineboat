@@ -50,4 +50,4 @@ client.on("messageCreate", (message) => {
 })
 
 // Replace 'YOUR_TOKEN' with your Discord bot token
-client.login("MTExNTA3MjYwNDQ1MDA4Mjk0OA.GWXy1F.ZwSjEQPUi7Mat6t5i4Zu3Mp6M4c_Vpxl6DZ-cs")
+client.login("YOUR_TOKEN")
