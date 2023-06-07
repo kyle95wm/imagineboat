@@ -1,3 +1,4 @@
+const { token } = require('./config.json');
 const { Client, GatewayIntentBits, Collection, ActivityType } = require("discord.js")
 const client = new Client({
     allowedMentions: { parse: [] },
@@ -50,4 +51,4 @@ client.on("messageCreate", (message) => {
 })
 
 // Replace 'YOUR_TOKEN' with your Discord bot token
-client.login("YOUR_TOKEN")
+client.login(token)
